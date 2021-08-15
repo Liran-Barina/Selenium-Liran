@@ -58,9 +58,9 @@ public class Main {
 
         List<String> titles = courses.stream().map(e -> e.findElement(By.tagName("h6")).getText()).collect(Collectors.toList());
         System.out.println(" Your courses: ");
-        int i = 0;
+        int i = 1;
         for (String title : titles) {
-            System.out.println(title + " ." + (i + 1));
+            System.out.println(title + " ." + (i));
             i++;
         }
         System.out.println(" Choose a course number:");
